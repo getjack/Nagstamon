@@ -10,3 +10,5 @@ nagstamon.conf/
 nagstamon.egg-info/
 venv/
 dist/
+build/lib/
+build/scripts-3.8/
