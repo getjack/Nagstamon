@@ -9,4 +9,4 @@ nagstamon.conf/
 .vscode/
 nagstamon.egg-info/
 venv/
-build/
+dist/

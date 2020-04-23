@@ -18,14 +18,14 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 
+import glob
+import os
+import os.path
 import platform
-import os, os.path
-import sys
 import shutil
 import subprocess
+import sys
 import zipfile
-import glob
-import time
 
 CURRENT_DIR = os.getcwd()
 NAGSTAMON_DIR = os.path.normpath('{0}{1}..{1}'.format(CURRENT_DIR, os.sep))
