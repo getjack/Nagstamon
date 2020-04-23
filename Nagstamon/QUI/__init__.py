@@ -27,7 +27,6 @@ from PyQt5.QtMultimedia import *
 
 import os
 import os.path
-import urllib.parse
 import subprocess
 import platform
 import time
@@ -59,7 +58,6 @@ from Nagstamon.Config import (Action,
                               DESKTOP_WAYLAND)
 
 from Nagstamon.Servers import (SERVER_TYPES,
-                               servers,
                                create_server,
                                get_enabled_servers,
                                get_worst_status,

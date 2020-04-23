@@ -30,21 +30,21 @@
 #   Once IcingaWeb2 has an API, it's probably the better choice.
 
 
-from Nagstamon.Servers.Generic import GenericServer
-import urllib.parse
-import sys
 import copy
-import json
 import datetime
+import json
 import socket
+import sys
+import urllib.parse
 
 from bs4 import BeautifulSoup
+
+from Nagstamon.Config import (conf)
+from Nagstamon.Helpers import webbrowser_open
 from Nagstamon.Objects import (GenericHost,
                                GenericService,
                                Result)
-from Nagstamon.Config import (conf,
-                              AppInfo)
-from Nagstamon.Helpers import webbrowser_open
+from Nagstamon.Servers.Generic import GenericServer
 
 
 def strfdelta(tdelta, fmt):

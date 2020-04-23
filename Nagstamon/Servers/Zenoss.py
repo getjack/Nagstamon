@@ -17,12 +17,8 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 
-import sys
-import urllib
-import base64
-import time
-import copy
 import datetime
+import sys
 import traceback
 from datetime import datetime
 
@@ -30,6 +26,7 @@ from Nagstamon.Config import conf
 from Nagstamon.Objects import (GenericHost, GenericService, Result)
 from Nagstamon.Servers.Generic import GenericServer
 from Nagstamon.thirdparty.zenoss_api import ZenossAPI
+
 
 class ZenossServer(GenericServer):
     

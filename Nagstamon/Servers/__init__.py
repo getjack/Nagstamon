@@ -19,33 +19,27 @@
 
 """Module Servers"""
 
-import urllib.request
-import urllib.error
-import urllib.parse
-
 from collections import OrderedDict
 
-# load all existing server types
-from Nagstamon.Servers.Nagios import NagiosServer
+from Nagstamon.Config import conf
+from Nagstamon.Helpers import STATES
 from Nagstamon.Servers.Centreon import CentreonServer
 from Nagstamon.Servers.Icinga import IcingaServer
 from Nagstamon.Servers.IcingaWeb2 import IcingaWeb2Server
-from Nagstamon.Servers.Multisite import MultisiteServer
-from Nagstamon.Servers.op5Monitor import Op5MonitorServer
-from Nagstamon.Servers.Opsview import OpsviewServer
-from Nagstamon.Servers.Thruk import ThrukServer
-from Nagstamon.Servers.Zabbix import ZabbixServer
 from Nagstamon.Servers.Livestatus import LivestatusServer
-from Nagstamon.Servers.Zenoss import ZenossServer
 from Nagstamon.Servers.Monitos3 import Monitos3Server
 from Nagstamon.Servers.Monitos4x import Monitos4xServer
-from Nagstamon.Servers.SnagView3 import SnagViewServer
-from Nagstamon.Servers.Sensu import SensuServer
+from Nagstamon.Servers.Multisite import MultisiteServer
+# load all existing server types
+from Nagstamon.Servers.Nagios import NagiosServer
+from Nagstamon.Servers.Opsview import OpsviewServer
 from Nagstamon.Servers.Prometheus import PrometheusServer
-
-from Nagstamon.Config import conf
-
-from Nagstamon.Helpers import STATES
+from Nagstamon.Servers.Sensu import SensuServer
+from Nagstamon.Servers.SnagView3 import SnagViewServer
+from Nagstamon.Servers.Thruk import ThrukServer
+from Nagstamon.Servers.Zabbix import ZabbixServer
+from Nagstamon.Servers.Zenoss import ZenossServer
+from Nagstamon.Servers.op5Monitor import Op5MonitorServer
 
 # dictionary for servers
 servers = OrderedDict()

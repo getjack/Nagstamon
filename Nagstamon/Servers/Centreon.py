@@ -17,20 +17,18 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 
-import urllib.request
-import urllib.parse
-import urllib.error
+import re
 import socket
 import sys
-import re
-import copy
-
+import urllib.error
+import urllib.parse
+import urllib.request
 from datetime import datetime, timedelta
 
-from Nagstamon.Objects import *
-from Nagstamon.Servers.Generic import GenericServer
 from Nagstamon.Config import conf
 from Nagstamon.Helpers import webbrowser_open
+from Nagstamon.Objects import *
+from Nagstamon.Servers.Generic import GenericServer
 
 
 class CentreonServer(GenericServer):

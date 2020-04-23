@@ -21,21 +21,7 @@
 # NOTES:
 # Currently experimental version, only viewing and acknowledging works at present.
 
-import os
-
-import base64
-import zlib
-
-import hashlib
-import logging
-import string
-import sys
 import urllib
-
-    
-import re
-from collections import deque
-
 
 try:
     # Separate module or Python <2.6

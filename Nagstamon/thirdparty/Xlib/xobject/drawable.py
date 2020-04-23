@@ -17,7 +17,7 @@
 #    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,  USA
 
 
-from Xlib import X, Xatom, Xutil
+from Xlib import X, Xatom
 from Xlib.protocol import request, rq
 
 # Other X resource objects

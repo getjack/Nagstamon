@@ -19,22 +19,22 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 
-import sys
-import urllib.request, urllib.parse, urllib.error
-import copy
-import pprint
 import json
-
-from datetime import datetime, timedelta
+import pprint
+import sys
+import urllib.error
+import urllib.parse
+import urllib.request
 from ast import literal_eval
+from datetime import datetime, timedelta
 
 from Nagstamon.Config import conf
+from Nagstamon.Helpers import (HumanReadableDurationFromSeconds,
+                               webbrowser_open)
 from Nagstamon.Objects import (GenericHost,
                                GenericService,
                                Result)
 from Nagstamon.Servers.Generic import GenericServer
-from Nagstamon.Helpers import (HumanReadableDurationFromSeconds,
-                               webbrowser_open)
 
 
 class OpsviewService(GenericService):

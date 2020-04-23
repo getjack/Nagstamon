@@ -4,8 +4,10 @@ the Xlib modules for python.
 See the freedesktop.org `specification <http://standards.freedesktop.org/wm-spec/wm-spec-latest.html>`_ for more information.
 """
 
-from Xlib import display, X, protocol, Xatom
 import time
+
+from Xlib import display, X, protocol
+
 
 class EWMH:
 	"""This class provides the ability to get and set properties defined by the EWMH spec.

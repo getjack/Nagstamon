@@ -21,13 +21,11 @@
 # Standard modules
 import errno
 import select
-import socket
 import struct
 import sys
 
 # Xlib modules
 from Xlib import error
-
 from Xlib.support import lock, connect
 
 # Xlib.protocol modules

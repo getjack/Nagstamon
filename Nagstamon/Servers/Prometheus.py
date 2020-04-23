@@ -29,24 +29,20 @@
 #   In the future it would be great to be able to interract with
 #   alertmanager, so that managing alerts (e.g. silencing) is possible
 
-import sys
-import urllib.request, urllib.parse, urllib.error
-import copy
-import pprint
 import json
-
+import pprint
+import sys
 from datetime import datetime, timedelta, timezone
+
 import dateutil.parser
 
-from ast import literal_eval
-
 from Nagstamon.Config import conf
+from Nagstamon.Helpers import (webbrowser_open)
 from Nagstamon.Objects import (GenericHost,
                                GenericService,
                                Result)
 from Nagstamon.Servers.Generic import GenericServer
-from Nagstamon.Helpers import (HumanReadableDurationFromSeconds,
-                               webbrowser_open)
+
 
 class PrometheusService(GenericService):
     """
