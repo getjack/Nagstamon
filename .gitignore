@@ -7,3 +7,6 @@ nagstamon.conf/
 .directory
 .metadata/
 .vscode/
+nagstamon.egg-info/
+venv/
+build/
